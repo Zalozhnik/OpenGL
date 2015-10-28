@@ -55,7 +55,7 @@ int DrawGLScene( GLvoid )                // Здесь будет происходить вся прорисов
 	glTranslatef(-1.5f,0.0f,-6.0f);         // Сдвинемся влево на 1.5 единицы и
                                                 // в экран на 6.0
 
-	//glRotatef(rtri, 0.0f, 1.0f, 0.0f);
+	glRotatef(rtri, 0.0f, 1.0f, 0.0f);
 
 	glBegin(GL_TRIANGLES);
 		glColor3f(1.0f, 0.0f, 0.0f);	// Красный цвет
@@ -68,7 +68,7 @@ int DrawGLScene( GLvoid )                // Здесь будет происходить вся прорисов
 
 	glLoadIdentity();
 	glTranslatef(1.5f,0.0f,-6.0f);           // Сдвинем вправо на 3 единицы
-	//glRotatef(rquad, 1.0f, 0.0f, 0.0f);
+	glRotatef(rquad, 1.0f, 0.0f, 0.0f);
 	
 	glColor3f(0.0f, 0.0f, 1.0f);
 	glBegin(GL_QUADS);
