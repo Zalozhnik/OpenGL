@@ -58,19 +58,19 @@ int DrawGLScene( GLvoid )                // Здесь будет происходить вся прорисов
 	//glRotatef(rtri, 0.0f, 1.0f, 0.0f);
 
 	glBegin(GL_TRIANGLES);
-		//glColor3f(1.0f, 0.0f, 0.0f);	// Красный цвет
+		glColor3f(1.0f, 0.0f, 0.0f);	// Красный цвет
 		glVertex3f( 0.0f, 1.0f, 0.0f);  // Вверх
-		//glColor3f(0.0f, 1.0f, 0.0f);	// Зеленный цвет
+		glColor3f(0.0f, 1.0f, 0.0f);	// Зеленный цвет
         glVertex3f(-1.0f,-1.0f, 0.0f);  // Слева снизу
-		//glColor3f(0.0f, 0.0f, 1.0f);	// Синий цвет
+		glColor3f(0.0f, 0.0f, 1.0f);	// Синий цвет
         glVertex3f( 1.0f,-1.0f, 0.0f);  // Справа снизу
     glEnd();
 
-	//glLoadIdentity();
-	glTranslatef(3.0f,0.0f, 0.0f);           // Сдвинем вправо на 3 единицы
+	glLoadIdentity();
+	glTranslatef(1.5f,0.0f,-6.0f);           // Сдвинем вправо на 3 единицы
 	//glRotatef(rquad, 1.0f, 0.0f, 0.0f);
 	
-	//glColor3f(0.0f, 0.0f, 1.0f);
+	glColor3f(0.0f, 0.0f, 1.0f);
 	glBegin(GL_QUADS);
 		glVertex3f(-1.0f, 1.0f, 0.0f);  // Слева вверху
         glVertex3f( 1.0f, 1.0f, 0.0f);  // Справа вверху
@@ -78,8 +78,8 @@ int DrawGLScene( GLvoid )                // Здесь будет происходить вся прорисов
         glVertex3f(-1.0f,-1.0f, 0.0f);  // Слева внизу
     glEnd();
 
-	//rtri +=0.2f;
-	//rquad -=0.15f;
+	rtri +=0.2f;
+	rquad -=0.15f;
     
 	return true;                // Прорисовка прошла успешно
 }
